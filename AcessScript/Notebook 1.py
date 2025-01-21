@@ -50,9 +50,9 @@ with open("/tmp/output_image.png", "wb") as temp_file:
 spark = SparkSession.builder.getOrCreate()
 spark.sparkContext.addFile("/tmp/output_image.png")
 
-mssparkutils.fs.mv("file:/tmp/output_image.png", "abfss://ppsEditor@adlsmnitbi.dfs.core.windows.net/BlissRescaled.png")
+mssparkutils.fs.mv("file:/tmp/output_image.png", "abfss://ppsEditor@ppsStAcc.dfs.core.windows.net/BlissRescaled.png")
 
-# mssparkutils.fs.put("abfss://ppsEditor@adlsmnitbi.dfs.core.windows.net/BlissRescaled.png", rescaledpng, True)
+# mssparkutils.fs.put("abfss://ppsEditor@ppsStAcc.dfs.core.windows.net/BlissRescaled.png", rescaledpng, True)
 
 
 # In[77]:
@@ -80,9 +80,9 @@ with open("/tmp/output_image.jpg", "wb") as temp_file:
 spark = SparkSession.builder.getOrCreate()
 spark.sparkContext.addFile("/tmp/output_image.jpg")
 
-mssparkutils.fs.mv("file:/tmp/output_image.jpg", "abfss://ppsEditor@adlsmnitbi.dfs.core.windows.net/BlissRecoded.jpg")
+mssparkutils.fs.mv("file:/tmp/output_image.jpg", "abfss://ppsEditor@ppsStAcc.dfs.core.windows.net/BlissRecoded.jpg")
 
-# mssparkutils.fs.put("abfss://ppsEditor@adlsmnitbi.dfs.core.windows.net/BlissRescaled.png", rescaledpng, True)
+# mssparkutils.fs.put("abfss://ppsEditor@ppsStAcc.dfs.core.windows.net/BlissRescaled.png", rescaledpng, True)
 
 
 # In[84]:
