@@ -19,13 +19,6 @@ The **Photo Editing Pipeline** is a serverless, event-driven image processing sy
   - Supports fan-out/fan-in patterns for parallel processing.
   - Implements robust retry policies and error handling mechanisms.
 
-- **Real-Time Updates**:
-  - Integrated Azure SignalR for real-time progress notifications.
-  - Live status updates for user transparency and engagement.
-
-- **Security and Monitoring**:
-  - Secured with Azure Active Directory and Azure Key Vault.
-  - Performance monitoring using Azure Monitor and Application Insights.
 
 ## Architecture
 
@@ -33,16 +26,12 @@ The pipeline comprises:
 1. **Azure Blob Storage**: For file upload triggers and output storage.
 2. **Azure Functions**: Event-driven compute for processing tasks.
 3. **Durable Functions**: Orchestrating multi-step workflows.
-4. **Azure SignalR**: For real-time notifications.
-5. **Azure Event Grid**: Handling events and triggering downstream processes.
-6. **Azure Monitor**: Logging and performance tracking.
-7. **Azure Key Vault**: Securing sensitive information.
+
 
 ## Getting Started
 
 ### Prerequisites
 - Azure subscription.
-- Azure CLI installed locally.
 - Access to Azure Blob Storage and Function App resources.
 
 ### Setup
@@ -106,5 +95,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For queries or support, reach out to **Pranav Pratap Singh**:
-- Email: [ppsingh@umass.edu](mailto:ppsingh@umass.edu)
+- Email: [pranavpratap1997@gmail.com](mailto:pranavpratap1997@gmail.com)
 - GitHub: [PranavPratapSingh](https://github.com/PranavPratapSingh)
